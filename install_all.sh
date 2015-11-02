@@ -29,8 +29,10 @@ elif [[ $issue =~ ^Ubuntu\ 14 ]]; then
     extra_packages=libiberty-dev
 elif [[ $issue =~ ^Ubuntu\ 15\.04 ]]; then
     extra_packages=libiberty-dev
+elif [[ $issue =~ ^Debian ]]; then
+   :
 else
-    echo "Ubuntu 13.10, 14.* or 15.04 required" >&2
+    echo "Debian 8.2 or Ubuntu 13.10, 14.* or 15.04 required" >&2
     exit 1
 fi
 
